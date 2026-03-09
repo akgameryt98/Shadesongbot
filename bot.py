@@ -1,6 +1,4 @@
 from pyrogram import Client, filters
-from pytgcalls import PyTgCalls
-from pytgcalls.types.input_stream import AudioPiped
 import yt_dlp
 import os
 
@@ -9,7 +7,6 @@ API_HASH = os.getenv("API_HASH")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 app = Client("musicbot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
-call = PyTgCalls(app)
 
 queue = {}
 
